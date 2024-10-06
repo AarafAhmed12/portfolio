@@ -1,0 +1,126 @@
+.about{
+    margin-top: 110px;
+    background-image:linear-gradient(0deg, rgba(150, 0, 200, 0.3), rgba(0, 0, 119, 0.4)), url('/Shiny_wallpaper.jpg');
+    background-size: cover;
+    position: relative;
+    border-radius: 15px;
+    margin-bottom: 30px;
+    margin-top: 70px;
+    height: 40vw;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content_area{
+    width: 50%;
+    /* max-width: 100%; */
+    display: flex;
+    flex-direction: column;
+    gap: 1.5vw;
+    max-width: 100%;
+    position: relative;
+}
+
+.overlay::before{
+    position: absolute;
+    content: '';
+    opacity: 0.5;
+    width: 100%; /* Full width (cover the whole page) */
+    height: 100%; /* Full height (cover the whole page) */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+    z-index: 2;
+}
+
+
+.content_area p{
+    font-size: 20px;
+    font-family: "Jost", sans-serif;
+    z-index: 9999999999999;
+
+}
+
+.List{
+    margin-left: 25px;
+    z-index: 999999999999;
+}
+
+.List li {
+    font-size: 20px;
+    font-family: "Jost", sans-serif;
+}
+
+.List li span{
+    font-size: 20px;
+    font-family: "Jost", sans-serif;
+}
+
+.List li::marker{
+    font-size: 22px;
+    color: #44bcf4;
+}
+
+
+
+
+@media(max-width:1300px){
+
+
+    .content_area{
+        width: 80%;
+        gap: 4.5vw;
+
+    }
+
+
+}
+
+@media(max-width:950px){
+
+    .about{
+        height: 60vh;
+    }
+ 
+    .content_area p{
+        font-size: 18px;
+    }
+
+    .List li::marker,
+    .List li span,
+    .List li {
+        font-size: 18px;
+    }
+
+    
+}
+
+@media (max-width:750px){
+
+    .content_area p{
+        font-size: 15px;
+    }
+    .List li::marker,
+    .List li span,
+    .List li {
+        font-size: 15px;
+    }
+}
+
+@media(max-width:450px){
+
+    .content_area p{
+        font-size: 13px;
+    }
+    .List li::marker,
+    .List li span,
+    .List li {
+        font-size: 13px;
+    }
+
+
+}

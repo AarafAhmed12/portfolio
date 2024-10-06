@@ -1,0 +1,129 @@
+.header{
+    height: 40vw;
+    /* margin: 30px auto; */
+    background-position: center;
+    background-image:linear-gradient(0deg, rgba(150, 0, 200, 0.3), rgba(0, 0, 119, 0.4)), url('/header_hero.jpg');
+    background-size: cover;
+    position: relative;
+    border-radius: 15px;
+    margin-bottom: 30px;
+    margin-top: 70px;
+    position: relative;
+}
+
+.overlay{
+    position: absolute;
+    content: '';
+    /* background-color: #000; */
+    opacity: 0.5;
+    width: 100%; /* Full width (cover the whole page) */
+    height: 100%; /* Full height (cover the whole page) */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+    z-index: 2;
+}
+
+.header-contents h4 {
+    color: #fff;
+    align-self: self-start;
+    font-size: 35px;
+    margin: -35px 0;
+    font-weight: 700;
+    padding: 0;
+     font-family: "Poiret One", cursive;
+     z-index: 999999999999;
+}
+
+.header .header-contents{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 1.5vw;
+    max-width: 50%;
+    bottom: 38%;
+    left: 30vw;
+    animation: fadeIn 3s;
+    z-index: 999999999999;
+}
+
+.header .header-contents h2 {
+   /* font-family: "Poiret One", cursive; */
+   font-family: "Fraunces", serif;
+   font-size: max(5.1vw, 22px);
+   font-weight: 300;
+}
+
+.header .header-contents h2 span{
+   font-family: "Anton SC", sans-serif;
+   text-transform: lowercase;
+   font-weight: 300;
+}
+
+.header .header-contents button{
+    padding: 10px 25px 10px 20px;
+    text-transform: capitalize;
+    border: 2px solid #44bcf4;
+    font-size: 16px;
+    color: #fff;
+    display: inline-block;
+    background: none;
+    font-family: "Fraunces", serif;
+    cursor: pointer;
+}
+
+
+
+@media(max-width:900px){
+    .header-contents h4{
+        font-size: 27px;
+        margin: -28px 0;
+    }
+
+    .header .header-contents{
+        bottom: 30%;
+        left: 8vw;
+    }
+
+    .header .header-contents button {
+        padding: 4px 8px 4px 8px;
+        align-self: baseline;
+    }
+
+}
+
+@media(max-width:750px){
+    .header-contents h4 {
+        font-size: 20px;
+        margin: -20px 0;
+    }
+
+    .header .header-contents{
+        left: 5vw;
+    }
+
+    .header .header-contents button {
+        padding: 4px 8px 4px 8px;
+    }
+
+}
+
+
+@media(max-width:450px){
+    .header-contents h4 {
+        font-size: 15px;
+        margin: -14px 0;
+    }
+
+
+    .header .header-contents button {
+        padding: 4px 8px 4px 8px;
+        font-size: 10px;
+    }
+
+    
+
+}

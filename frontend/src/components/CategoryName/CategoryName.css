@@ -1,0 +1,23 @@
+.CategoryName-menu-list {
+  /* margin-top: 30px;
+    background: azure;
+    width: 115px;
+    padding: 5px 10px;
+    max-width: 100%;
+    border-radius: 10px; */
+  /* background: repeating-conic-gradient(from 45deg, #ff47aa 0% 25%, #4e3ab0 0% 50%);
+background-size: 32px 32px; */
+  /* background-color: #d0cdc9; */
+  width: 115px;
+  padding: 12px 10px;
+  max-width: 100%;
+  border-radius: 10px;
+  border: 1px dashed #44bcf4;
+}
+
+.CategoryName-menu-list p {
+  font-size: max(1.4vw, 16px);
+  color: #fff;
+  font-weight: 900;
+  font-family: "Poiret One", cursive;
+}

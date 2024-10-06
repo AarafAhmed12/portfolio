@@ -1,0 +1,14 @@
+.credit{
+    color: aliceblue;
+    text-align: center;
+    background-color: #343434;
+    font-size: 20px;
+    padding: 15px;
+    text-transform: capitalize;
+}
+
+.credit a{
+    color: #44bcf4;
+    margin-left: 10px;
+    margin-right: 10px;
+}

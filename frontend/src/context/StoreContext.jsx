@@ -1,5 +1,5 @@
 import { createContext, useEffect, useState } from "react";
-import { perfume_list } from "../assets/assets";
+import { portfolio_list } from "../assets/assets";
 export const StoreContext = createContext(null);
 
 const StoreContextProvider = (props) => {
@@ -22,7 +22,7 @@ const StoreContextProvider = (props) => {
     }, [cartItems]);
 
     const contextvalue = {
-        perfume_list,
+        portfolio_list,
         cartItems,
         setCartItems,
         addToCart,

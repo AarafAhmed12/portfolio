@@ -9,6 +9,7 @@
     margin-bottom: 30px;
     margin-top: 70px;
     position: relative;
+    z-index: 999;
 }
 
 .overlay{
@@ -97,8 +98,12 @@
 
 @media(max-width:750px){
     .header-contents h4 {
-        font-size: 20px;
-        margin: -20px 0;
+        font-size: 22px;
+        margin: -18px 0;
+    }
+
+    .header .header-contents h2 {
+        font-size: max(6.1vw, 22px);
     }
 
     .header .header-contents{
@@ -114,8 +119,8 @@
 
 @media(max-width:450px){
     .header-contents h4 {
-        font-size: 15px;
-        margin: -14px 0;
+        font-size: 17px;
+        margin: -10px 0;
     }
 
 

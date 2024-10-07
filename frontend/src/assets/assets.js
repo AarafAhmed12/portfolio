@@ -72,7 +72,7 @@ export const bottle_list = [
   },
 ];
 
-export const perfume_list = [
+export const portfolio_list = [
   {
     _id: "1",
     name: "Html Css",

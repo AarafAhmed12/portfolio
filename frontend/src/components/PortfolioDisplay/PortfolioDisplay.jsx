@@ -1,20 +1,20 @@
 import React, { useContext } from "react";
-import "./FoodDisplay.css";
+import "./PortfolioDisplay.css";
 import { StoreContext } from "../../context/StoreContext";
-import FoodItem from "../Fooditem/FoodItem";
-import Transition from "../../components/Transition/Transition";
+import PortfolioItem from "../PortfolioItem/PortfolioItem";
+import Transition from "../Transition/Transition";
 
 
-const FoodDisplay = ({ category }) => {
-  const { perfume_list } = useContext(StoreContext);
+const PortfolioDisplay = ({ category }) => {
+  const { portfolio_list } = useContext(StoreContext);
   return (
     <Transition>
-    <div className="food-display" id="food-display">
-      <div className="food-display-list">
-        {perfume_list.map((item, index) => {
+    <div className="Portfolio-display" id="Portfolio-display">
+      <div className="Portfolio-display-list">
+        {portfolio_list.map((item, index) => {
           if (category === 'All' || category === item.category) {
             return (
-              <FoodItem
+              <PortfolioItem
                 key={index}
                 id={item._id}
                 name={item.name}
@@ -31,4 +31,4 @@ const FoodDisplay = ({ category }) => {
   );
 };
 
-export default FoodDisplay;
+export default PortfolioDisplay;

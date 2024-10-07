@@ -1,18 +1,18 @@
 import React, { useContext } from 'react'
-import './FoodItem.css'
+import './PortfolioItem.css'
 import { assets } from '../../assets/assets'
 import { StoreContext } from '../../context/StoreContext'
 import TransitionSecond from '../Transition/TransitionSecond'
-const FoodItem = ({id,name,image} ) => {
+const PortfolioItem = ({id,name,image} ) => {
 
   
   const {cartItems,addToCart,removeFromCart} = useContext(StoreContext);
   return (
     // <div className='main'>
     <TransitionSecond>
-    <div className='food-item'>
-        <div className='food-item-image-container'>
-            <img className='food-item-image' src={image}/>
+    <div className='Portfolio-item'>
+        <div className='Portfolio-item-image-container'>
+            <img className='Portfolio-item-image' src={image}/>
             
             {!cartItems[id]
             ?<img className='add' onClick={()=>addToCart(id)} src={assets.add_icon_white} alt=''/>
@@ -23,8 +23,8 @@ const FoodItem = ({id,name,image} ) => {
            </div>
           }
        </div>
-      <div className='food-item-info'>
-        <div className='food-item-name-rating'>
+      <div className='Portfolio-item-info'>
+        <div className='Portfolio-item-name-rating'>
             <p>{name}</p>
             <img src={assets.rating_starts}/>
         </div>
@@ -41,4 +41,4 @@ const FoodItem = ({id,name,image} ) => {
 
 
 
-export default FoodItem
+export default PortfolioItem

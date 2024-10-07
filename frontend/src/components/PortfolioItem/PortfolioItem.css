@@ -1,4 +1,4 @@
-.food-item{
+.Portfolio-item{
     width: 100%;
     margin: auto;
     border-radius: 15px;
@@ -9,7 +9,7 @@
     background-color: #fff;
 }
 
-.food-item-image{
+.Portfolio-item-image{
     width: 100%;
     border-radius: 15px 15px 0px;
     height: 450px;
@@ -19,45 +19,34 @@
 }
 
 
-.food-item-info{
+.Portfolio-item-info{
     padding: 15px;
 }
 
-.food-item-name-rating{
+.Portfolio-item-name-rating{
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 10px;
 }
 
-.food-item-name-rating p{
+.Portfolio-item-name-rating p{
     font-size: 22px;
        font-family: "Poiret One", cursive;
     font-weight: 600;
     color: #000;
 }
 
-.food-item-name-rating img{
+.Portfolio-item-name-rating img{
     width: 70px;
 }
 
-.food-item-desc{
-    color: #676767;
-    font-size: 12px;
-}
 
-.food-item-price{
-    color: tomato;
-    font-size: 22px;
-    font-weight: 500;
-    margin: 10px 0;
-}
-
-.food-item-image-container{
+.Portfolio-item-image-container{
     position: relative;
 }
 
-.food-item-image-container .add{
+.Portfolio-item-image-container .add{
     width: 35px;
     position: absolute;
     bottom: 15px;
